@@ -54,13 +54,14 @@ public class DrawingTools {
         if ( distance >= 20 && distance <= 40){
             canvas.drawLine(lastX, lastY, currentX, currentY, paint);
             imageView.setImageBitmap(bitmap);
-            saveText += "X:" + String.valueOf((int)lastX) +
-                    "Y:" + String.valueOf((int)lastY) + "\n";
+            //saveText += "X:" + String.valueOf((int)lastX) +
+            //        "Y:" + String.valueOf((int)lastY) + "\n";
+            saveText += String.valueOf((int)lastX) + ' ' + String.valueOf((int)lastY) + '\n';
             lineFinished = true;
         }else if ( distance > 40){
             lastX = currentX;
             lastY = currentY;
-            saveText += "LIFT\n";
+            saveText += "9999 69\n";
         }
         if(lineFinished){
             lastX = currentX;
